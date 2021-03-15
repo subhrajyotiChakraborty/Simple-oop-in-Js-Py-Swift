@@ -31,6 +31,11 @@ class Person: Human {
 }
 
 
-let bob = Person(name: "Bob", age: 30)
-bob.getName()
+var bob = Person(name: "Bob", age: 30)
 bob.getAge()
+
+var cody = bob
+cody.name = "Cody"
+
+cody.getName()
+bob.getName()
